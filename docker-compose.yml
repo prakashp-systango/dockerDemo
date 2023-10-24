@@ -13,8 +13,7 @@ services:
       options:
         max-file: "1" # number of files or file count
         max-size: "10m" # file size
-    networks:
-      - db-network
+    
 
 
  
