@@ -1,19 +1,8 @@
-version: "2"
+version : '3'
 services:
-  diving-board-web:
-    container_name: diving-board-web
+  app:
+    container_name: docker-node
+    restart: always
     build: .
     ports:
       - "3000:3000"
-    
-    command: forever --minUptime 1000 --spinSleepTime 1000 app.js
-    restart: always
-    logging:
-      driver: "json-file"
-      options:
-        max-file: "1" # number of files or file count
-        max-size: "10m" # file size
-    
-
-
- 
