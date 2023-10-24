@@ -1,7 +1,7 @@
 version : '3'
 services:
   app:
-    conatiner_name: docker-node
+    container_name: docker-node
     restart: always
     build: .
     ports:
